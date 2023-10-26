@@ -1,0 +1,20 @@
+
+
+
+<mat-card class="mb-3">
+
+    <mat-card-header>
+        <mat-card-title>{{productObj.pname}}</mat-card-title>
+    
+    </mat-card-header>
+<mat-card-content>
+    <p>your order for <strong>{{productObj.pname}}</strong> is in status <strong>{{productObj.pstatus}}</strong></p>
+</mat-card-content>
+<mat-divider inset></mat-divider>
+<mat-card-actions class="d-flex justify-content-between">
+    <button mat-raised-button color="accent"(click)="onProgressUpdate()">In progess</button >
+    <button mat-raised-button  color="primary"(click)="onDispatch()">Dispatched</button >
+    <button mat-raised-button  class="btn-success"(click)="onDelivered()" > Delivered</button >
+</mat-card-actions>
+</mat-card>
+
